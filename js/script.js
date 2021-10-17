@@ -31,11 +31,6 @@ $('.action__slider-inner').slick({
 });
 $('.slick-next,.slick-prev').addClass('animate__fadeIn');
 
-new fullpage('#fullpage', {
-	//options here
-	autoScrolling:true,
-	scrollHorizontally: true
-});
 
 $('.services__box, .price__box').hover(
     function () {
@@ -200,3 +195,8 @@ $(document).ready(function(){
         return false;
     });
 });        
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		autoScrolling:true,
+		scrollHorizontally: true
+	});
