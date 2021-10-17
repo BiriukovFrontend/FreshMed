@@ -31,7 +31,11 @@ $('.action__slider-inner').slick({
 });
 $('.slick-next,.slick-prev').addClass('animate__fadeIn');
 
-
+new fullpage('#fullpage', {
+	//options here
+	autoScrolling:true,
+	scrollHorizontally: true
+});
 
 $('.services__box, .price__box').hover(
     function () {
