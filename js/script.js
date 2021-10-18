@@ -196,3 +196,6 @@ $(document).ready(function(){
     });
 });        
 
+new fullpage('#fullpage', {
+	autoScrolling:true
+});
