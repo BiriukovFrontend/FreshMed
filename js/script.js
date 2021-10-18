@@ -195,8 +195,4 @@ $(document).ready(function(){
         return false;
     });
 });        
-$(document).ready(function() {
-	$('#fullpage').fullpage({
-		autoScrolling:true,
-		scrollHorizontally: true
-	});
+
