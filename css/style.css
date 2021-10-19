@@ -1232,7 +1232,7 @@ header {
   border-radius: 8px;
 }
 
-.services__inner a:hover .service__box .service__box-img object svg g {
+ g {
   background-color: #87ad3b;
   color: white;
   fill: white;
