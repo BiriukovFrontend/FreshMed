@@ -1225,7 +1225,7 @@ header {
 .services__inner a:hover,
 .services__inner a:hover .services__box-title,
 .services__inner a:hover svg path,
-.services__inner a:hover img svg {
+.services__inner a:hover img svg g {
   background-color: #87ad3b;
   color: white;
   fill: white;
