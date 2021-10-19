@@ -1706,7 +1706,7 @@ form {
 
 .form__page {
   text-align: center;
-  background-image: url(./images/Form/Form.png);
+  background-image: url(../images/Form/Form.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
