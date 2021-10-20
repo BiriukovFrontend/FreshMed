@@ -1585,10 +1585,13 @@ header {
 
 .price__box:hover,
 .price__box:hover .price__box-title,
-.price__box:hover svg path,
-.price__box:hover img svg g {
+.price__box:hover svg path, {
   background-color: #87ad3b;
   color: white;
+  fill: white;
+}
+.price__box:hover img svg path{
+    color: white;
   fill: white;
 }
 
