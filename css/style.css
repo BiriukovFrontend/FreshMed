@@ -700,7 +700,7 @@ header {
   height: 5px;
   right: -12.6px;
   bottom: 24px;
-  background-image: url("./images/Header/Select.png");
+  background-image: url("/images/Header/Select.png");
 }
 
 .menu__list-two::before {
@@ -792,7 +792,7 @@ header {
   right: 10px;
   width: 7.79px;
   height: 5px;
-  background-image: url("./images/Header/Select.png");
+  background-image: url("/images/Header/Select.png");
 }
 
 .menu__launge a {
@@ -880,7 +880,7 @@ header {
   position: absolute;
   top: 10px;
   left: 70px;
-  background-image: url("./images/Mobile/Select.svg");
+  background-image: url("/images/Mobile/Select.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 7.79px;
@@ -888,7 +888,7 @@ header {
 }
 
 .menu__mobile-two.active.menu__mobile-two::before {
-  background-image: url("./images/Mobile/Selecttop.svg");
+  background-image: url("/images/Mobile/Selecttop.svg");
 }
 
 .submenu {
@@ -1358,7 +1358,7 @@ header {
 }
 
 .vacancy__box-arrow {
-  background-image: url("./images/arrowright.svg");
+  background-image: url("/images/arrowright.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1728,7 +1728,7 @@ form {
   left: 0;
   top: 0;
   border: none;
-  background-image: url(./images/Price/Icon.svg);
+  background-image: url("/images/Price/Icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   line-height: 63px;
@@ -1741,7 +1741,7 @@ form {
 
 .advantages {
   text-align: center;
-  background-image: url(./images/Advantages/1.jpg);
+  background-image: url("/images/Advantages/1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1928,7 +1928,7 @@ form {
 
 .form__page {
   text-align: center;
-  background-image: url(./images/Form/Form.png);
+  background-image: url("/images/Form/Form.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3100,10 +3100,10 @@ footer .contacts__box:last-child {
   }
 }
 
-.webp .menu__list-two::after{ background-image: url(./images/Header/Select.webp); }
+.webp .menu__list-two::after{ background-image: url(/images/Header/Select.webp); }
 
-.webp .menu__launge::before{ background-image: url(./images/Header/Select.webp); }
+.webp .menu__launge::before{ background-image: url(/images/Header/Select.webp); }
 
-.webp .advantages{ background-image: url(./images/Advantages/1.webp); }
+.webp .advantages{ background-image: url(/images/Advantages/1.webp); }
 
-.webp .form__page{ background-image: url(./images/Form/Form.webp); }
+.webp .form__page{ background-image: url(/images/Form/Form.webp); }
