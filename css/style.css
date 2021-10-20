@@ -19,7 +19,7 @@
 @include font("UbuntuMediumItalic", "Ubuntu-MediumItalic", "500", "italic");
 @include font("UbuntuRegular", "Ubuntu-Regular", "normal", "normal"); */
 
-/* @charset "UTF-8";/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
 
 html {
   -webkit-text-size-adjust: 100%;
@@ -700,7 +700,7 @@ header {
   height: 5px;
   right: -12.6px;
   bottom: 24px;
-  background-image: url("./images/Header/Select.png");
+  background-image: url("../images/Header/Select.png");
 }
 
 .menu__list-two::before {
@@ -792,7 +792,7 @@ header {
   right: 10px;
   width: 7.79px;
   height: 5px;
-  background-image: url("./images/Header/Select.png");
+  background-image: url("../images/Header/Select.png");
 }
 
 .menu__launge a {
@@ -880,7 +880,7 @@ header {
   position: absolute;
   top: 10px;
   left: 70px;
-  background-image: url("./images/Mobile/Select.svg");
+  background-image: url("../images/Mobile/Select.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 7.79px;
@@ -888,7 +888,7 @@ header {
 }
 
 .menu__mobile-two.active.menu__mobile-two::before {
-  background-image: url("./images/Mobile/Selecttop.svg");
+  background-image: url("../images/Mobile/Selecttop.svg");
 }
 
 .submenu {
