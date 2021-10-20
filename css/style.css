@@ -1461,14 +1461,11 @@ header {
   fill: white;
   border-radius: 8px;
 }
-.services__inner a:hover svg path{
+.services__inner a:hover .price__box .price__box-imag object svg path{
     color: white;
   fill: white;
 }
-.services__inner a:hover path{
-    color: white;
-  fill: white;
-}
+
 
 .services__info {
   margin: 45px 0px 53px;
