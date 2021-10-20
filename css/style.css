@@ -1461,10 +1461,7 @@ header {
   fill: white;
   border-radius: 8px;
 }
-.services__inner a:hover .price__box .price__box-imag object svg path{
-    color: white;
-  fill: white;
-}
+
 
 
 .services__info {
@@ -1589,8 +1586,8 @@ header {
 .price__box:hover,
 .price__box:hover .price__box-title,
 .price__box:hover svg path,
-.price__box:hover img svg {
-  
+.price__box:hover img svg g {
+  background-color: #87ad3b;
   color: white;
   fill: white;
 }
