@@ -42,6 +42,7 @@ body {
   overflow-x: hidden;
 }
 
+
 main {
   display: block;
 }
@@ -1459,6 +1460,14 @@ header {
   color: white;
   fill: white;
   border-radius: 8px;
+}
+.services__inner a:hover svg path{
+    color: white;
+  fill: white;
+}
+.services__inner a:hover path{
+    color: white;
+  fill: white;
 }
 
 .services__info {
