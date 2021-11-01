@@ -453,8 +453,9 @@ body {
   animation-iteration-count: infinite;
 }
 @keyframes example {
-    from {bottom:25px;}
-    to {bottom:35px;}
+    0% {bottom:25px;}
+    50% {bottom:35px;}
+  100% {bottom:25px;}
 }
 
 .arrowTop::after {
