@@ -483,10 +483,11 @@ body {
   animation-iteration-count: infinite;
 }
 @keyframes arrowColor{
-  to { border-top:3px solid #000000;}
-  { border-left:3px solid #000000;}
-  from { border-top:3px solid #fff;}
-  { border-left:3px solid  #fff;}
+  to { border-top:3px solid #000000;
+  border-left:3px solid #000000;}
+
+  from { border-top:3px solid #fff;
+   border-left:3px solid  #fff;}
 }
 
 header {
