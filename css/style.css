@@ -478,6 +478,15 @@ body {
   right: 0;
   margin: auto;
   /* выравнивание по центру */
+   animation-name: arrowColor;
+     animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes arrowColor{
+  to { border-top:3px solid #000000;}
+  { border-left:3px solid #000000;}
+  from { border-top:3px solid #fff;}
+  { border-left:3px solid  #fff;}
 }
 
 header {
