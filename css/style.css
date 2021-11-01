@@ -448,6 +448,13 @@ body {
   border: 1px solid green;
   cursor: pointer;
   display: none;
+   animation-name: example;
+     animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+    from {bottom:25px;}
+    to {bottom:35px;}
 }
 
 .arrowTop::after {
