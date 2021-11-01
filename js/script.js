@@ -39,12 +39,32 @@ $('.services__box, .price__box').hover(
     function () {
         $(this).find('object').contents().find('svg').removeClass("journey");
     });
-$('.services__box').on('mouseover', function() {
-  $(this).find('svg').children().css({
-    'fill': 'white',
-    'stroke': 'white'
-  });
-});
+
+let links = document.getElementsByClassName('price__box');
+    for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('mouseenter', function(){
+            let link = document.querySelectorAll(':hover')[0];
+            let paths = link.getElementsByTagName('path');
+                 for (var i = 0; i < paths.length; i++) {
+                path = paths[i];
+                      path.style.fill = 'white';
+                
+            }
+        });
+        links[i].addEventListener('mouseleave', function(){
+            for (var i = 0; i < links.length; i++) {
+                let link = links[i];
+                let paths = link.getElementsByTagName('path');
+               
+                for (var i = 0; i < paths.length; i++) {
+                    path = paths[i];
+                    
+                    path.style.fill = 'black';
+                   
+                }
+            }
+        })
+    }
 function myFunction() {
     // Объявить переменные
     var input, filter, ul, li, w, i;
