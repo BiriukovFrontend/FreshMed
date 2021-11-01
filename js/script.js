@@ -39,9 +39,9 @@ $('.services__box, .price__box').hover(
     function () {
         $(this).find('object').contents().find('svg').removeClass("journey");
     });
-$('a').on('mouseover', function() {
+$('.services__box').on('mouseover', function() {
   $(this).find('svg').children().css({
-    'fill': 'green',
+    'fill': 'white',
     'stroke': 'white'
   });
 });
