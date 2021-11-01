@@ -39,7 +39,12 @@ $('.services__box, .price__box').hover(
     function () {
         $(this).find('object').contents().find('svg').removeClass("journey");
     });
-
+$('a').on('mouseover', function() {
+  $(this).find('svg').children().css({
+    'fill': 'green',
+    'stroke': 'white'
+  });
+});
 function myFunction() {
     // Объявить переменные
     var input, filter, ul, li, w, i;
