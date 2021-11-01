@@ -1591,7 +1591,11 @@ header {
   color: white;
   fill: white;
 }
+.journey  {
+  fill: white;
 
+
+}
 
 .price__box-title {
   color: #5e5c60;
