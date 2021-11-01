@@ -1591,7 +1591,7 @@ header {
   color: white;
   fill: white;
 }
-.journey  {
+.journey g path {
   fill: white;
 
 
