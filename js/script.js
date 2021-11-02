@@ -42,13 +42,13 @@ $('.services__box, .price__box').hover(
 
 function mouseDown() {
 
-    svgElement = document.querySelector("svg");
+    svgElement = document.querySelector("object");
     svgElement.style.fill = "Red";
 
 }
 function mouseOut() {
 
-    svgElement = document.querySelector("svg");
+    svgElement = document.querySelector("object");
     svgElement.style.fill = "Black";
 
 }
