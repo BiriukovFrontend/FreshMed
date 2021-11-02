@@ -37,14 +37,14 @@ function mouseDown() {
 
    var obj = document.querySelector("object");
 var svg = obj.contentDocument.querySelector("svg");
-    svg.style.fill = "Red";
+    svg.style.fill = "red";
 
 }
 function mouseOut() {
 
   var obj = document.querySelector("object");
 var svg = obj.contentDocument.querySelector("svg");
-    svg.style.fill = "Black";
+    svg.style.fill = "white";
 
 }
 
