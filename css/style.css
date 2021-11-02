@@ -3131,3 +3131,13 @@ footer .contacts__box:last-child {
 .webp .advantages{ background-image: url("../images/Advantages/1.webp"); }
 
 .webp .form__page{ background-image: url("../images/Form/Form.webp"); }
+#journey{ 
+fill:#87AD3B;
+}
+#journey:hover{ 
+fill:white;
+}
+path{
+fill:inherit;
+stroke:inherit;
+}
