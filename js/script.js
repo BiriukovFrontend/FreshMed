@@ -32,15 +32,7 @@ $('.action__slider-inner').slick({
 $('.slick-next,.slick-prev').addClass('animate__fadeIn');
 
 
-/*$('.services__box, .price__box').hover(
-    function () {
-        $(this).find('object').contents().find('svg').addClass("journey");
-    },
-    function () {
-        $(this).find('object').contents().find('svg').removeClass("journey");
-    });
 
-*/
 function mouseDown() {
 
    var obj = document.querySelector("object");
