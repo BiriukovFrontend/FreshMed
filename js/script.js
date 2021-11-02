@@ -40,31 +40,21 @@ $('.services__box, .price__box').hover(
         $(this).find('object').contents().find('svg').removeClass("journey");
     });
 
-let links = document.getElementsByClassName('price__box');
-    for (var i = 0; i < links.length; i++) {
-        links[i].addEventListener('mouseenter', function(){
-            let link = document.querySelectorAll(':hover')[0];
-            let paths = link.getElementsByTagName('path');
-                 for (var i = 0; i < paths.length; i++) {
-                path = paths[i];
-                      path.style.fill = 'white';
-                
-            }
-        });
-        links[i].addEventListener('mouseleave', function(){
-            for (var i = 0; i < links.length; i++) {
-                let link = links[i];
-                let paths = link.getElementsByTagName('path');
-               
-                for (var i = 0; i < paths.length; i++) {
-                    path = paths[i];
-                    
-                    path.style.fill = 'black';
-                   
-                }
-            }
-        })
-    }
+function mouseDown() {
+
+    svgElement = document.querySelector("svg");
+    svgElement.style.backgroundColor = "Red";
+
+}
+function mouseOut() {
+
+    svgElement = document.querySelector("svg");
+    svgElement.style.backgroundColor = "Black";
+
+}
+document.body.addEventListener('mouseover', mouseDown);
+document.body.addEventListener('mouseout', mouseOut);
+
 function myFunction() {
     // Объявить переменные
     var input, filter, ul, li, w, i;
