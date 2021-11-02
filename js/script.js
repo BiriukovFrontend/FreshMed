@@ -40,18 +40,22 @@ $('.services__box, .price__box').hover(
         $(this).find('object').contents().find('svg').removeClass("journey");
     });
 
+
 function mouseDown() {
 
-    svgElement = document.querySelector("object");
-    svgElement.style.fill = "Red";
+   var obj = document.querySelector("object");
+var svg = obj.contentDocument.querySelector("svg");
+    svg.style.fill = "Red";
 
 }
 function mouseOut() {
 
-    svgElement = document.querySelector("object");
-    svgElement.style.fill = "Black";
+  var obj = document.querySelector("object");
+var svg = obj.contentDocument.querySelector("svg");
+    svg.style.fill = "Black";
 
 }
+
 document.body.addEventListener('mouseover', mouseDown);
 document.body.addEventListener('mouseout', mouseOut);
 
