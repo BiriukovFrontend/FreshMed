@@ -19,237 +19,7 @@
 @include font("UbuntuMediumItalic", "Ubuntu-MediumItalic", "500", "italic");
 @include font("UbuntuRegular", "Ubuntu-Regular", "normal", "normal"); */
 
-
-
-html {
-  -webkit-text-size-adjust: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-*,
-::after,
-::before {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-  overflow-x: hidden;
-}
-
-
-main {
-  display: block;
-}
-
-button,
-h1,
-h2,
-h3,
-h4,
-li,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  margin-block: 0;
-  padding-inline: 0;
-}
-
-.btn.active.focus,
-.btn.active:focus,
-.btn.focus,
-.btn:active.focus,
-.btn:active:focus,
-.btn:focus,
-a.active.focus,
-a.active:focus,
-a.focus,
-a:active.focus,
-a:active:focus,
-a:focus,
-button.active.focus,
-button.active:focus,
-button.focus,
-button:active.focus,
-button:active:focus,
-button:focus {
-  outline: 0 !important;
-  outline-color: transparent !important;
-  outline-width: 0 !important;
-  outline-style: none !important;
-  -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
-          box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
-}
-
-hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-
-pre {
-  font-family: monospace, monospace;
-}
-
-a {
-  background-color: transparent;
-  color: #fff;
-  text-decoration: none;
-}
-
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-}
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-}
-
-small {
-  font-size: 80%;
-}
-
-sub,
-sup {
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -.25em;
-}
-
-sup {
-  top: -.5em;
-}
-
-img {
-  border-style: none;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  margin: 0;
-}
-
-button,
-input {
-  overflow: visible;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-[type=button],
-[type=reset],
-[type=submit],
-button {
-  -webkit-appearance: button;
-}
-
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner,
-button::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring,
-button:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
-}
-
-progress {
-  vertical-align: baseline;
-}
-
-textarea {
-  overflow: auto;
-}
-
-[type=checkbox],
-[type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-}
-
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-[type=search] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
-}
-
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
-}
-
-details {
-  display: block;
-}
-
-summary {
-  display: list-item;
-}
-
-template {
-  display: none;
-}
-
-[hidden] {
-  display: none;
-}
-
-* {
-  color: #000;
-}
+@import url(/node_modules/normalize.css/normalize.css);
 
 * {
   color: black;
@@ -448,14 +218,6 @@ body {
   border: 1px solid green;
   cursor: pointer;
   display: none;
-   animation-name: example;
-     animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-@keyframes example {
-    0% {bottom:25px;}
-    50% {bottom:35px;}
-  100% {bottom:25px;}
 }
 
 .arrowTop::after {
@@ -478,14 +240,6 @@ body {
   right: 0;
   margin: auto;
   /* выравнивание по центру */
-   animation-name: arrowColor;
-     animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-@keyframes arrowColor{
-  to { border-color:#000000;}
-
-  from {  border-color:#fff;}
 }
 
 header {
@@ -717,7 +471,7 @@ header {
   height: 5px;
   right: -12.6px;
   bottom: 24px;
-  background-image: url("../images/Header/Select.png");
+  background-image: url("/images/Header/Select.png");
 }
 
 .menu__list-two::before {
@@ -809,7 +563,7 @@ header {
   right: 10px;
   width: 7.79px;
   height: 5px;
-  background-image: url("../images/Header/Select.png");
+  background-image: url("/images/Header/Select.png");
 }
 
 .menu__launge a {
@@ -897,7 +651,7 @@ header {
   position: absolute;
   top: 10px;
   left: 70px;
-  background-image: url("../images/Mobile/Select.svg");
+  background-image: url("/images/Mobile/Select.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 7.79px;
@@ -905,7 +659,7 @@ header {
 }
 
 .menu__mobile-two.active.menu__mobile-two::before {
-  background-image: url("../images/Mobile/Selecttop.svg");
+  background-image: url("/images/Mobile/Selecttop.svg");
 }
 
 .submenu {
@@ -1375,7 +1129,7 @@ header {
 }
 
 .vacancy__box-arrow {
-  background-image: url("../images/arrowright.svg");
+  background-image: url("/images/arrowright.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1478,8 +1232,6 @@ header {
   border-radius: 8px;
 }
 
-
-
 .services__info {
   margin: 45px 0px 53px;
   text-align: left;
@@ -1514,6 +1266,7 @@ header {
           box-shadow: 0px 10px 20px rgba(135, 173, 59, 0.15);
   border-radius: 8px;
   text-align: center;
+  position: relative;
 }
 
 .services__box-img {
@@ -1526,6 +1279,14 @@ header {
 .services__box-title {
   color: #5e5c60;
   height: 75px;
+}
+
+.services .sale {
+  background-color: #fbff00;
+}
+
+.services .sale span {
+  color: red;
 }
 
 .journey path {
@@ -1593,6 +1354,7 @@ header {
   -webkit-box-shadow: 0px 10px 20px rgba(135, 173, 59, 0.15);
           box-shadow: 0px 10px 20px rgba(135, 173, 59, 0.15);
   border-radius: 8px;
+  position: relative;
 }
 
 .price__box:nth-of-type(4n) {
@@ -1601,16 +1363,11 @@ header {
 
 .price__box:hover,
 .price__box:hover .price__box-title,
-.price__box:hover svg path
-{
+.price__box:hover svg path,
+.price__box:hover img svg {
   background-color: #87ad3b;
   color: white;
   fill: white;
-}
-.journey g path {
-  fill: white;
-
-
 }
 
 .price__box-title {
@@ -1752,7 +1509,7 @@ form {
   left: 0;
   top: 0;
   border: none;
-  background-image: url("../images/Price/Icon.svg");
+  background-image: url(/images/Price/Icon.svg);
   background-position: center;
   background-repeat: no-repeat;
   line-height: 63px;
@@ -1763,9 +1520,40 @@ form {
   outline: none;
 }
 
+.sale {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -2%;
+  left: -2%;
+  color: #fff;
+  border-top-left-radius: 13%;
+  border-bottom-right-radius: 20%;
+  background-color: rgba(255, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sale span {
+  -webkit-transform: rotate(-40deg);
+      -ms-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+.saleTwo {
+  background-color: rgba(0, 255, 0, 0.8);
+}
+
 .advantages {
   text-align: center;
-  background-image: url("../images/Advantages/1.jpg");
+  background-image: url(/images/Advantages/1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1952,7 +1740,7 @@ form {
 
 .form__page {
   text-align: center;
-  background-image: url("../images/Form/Form.png");
+  background-image: url(/images/Form/Form.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2161,9 +1949,108 @@ footer .contacts__box:last-child {
   }
 }
 
-@media (max-width: 1010px) {
+@media (max-width: 1024px) {
   .action__slider {
     max-width: 1000px;
+  }
+
+  .services__wrapper {
+    padding: 25px 0 0px;
+  }
+
+  .services__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 56px auto 0;
+  }
+
+  .services__inner a {
+    margin: 20px 25px;
+  }
+
+  .services__box {
+    width: 220px;
+  }
+
+  .services__inner a:nth-of-type(4n) {
+    margin-right: 25px;
+  }
+
+  .services__box-img object {
+    width: 100%;
+    height: 100%;
+  }
+
+  .action {
+    padding: 50px 0px;
+  }
+
+  .action__slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 77%;
+    height: 420px;
+  }
+
+  .action__wrapper-bootom {
+    padding-bottom: 50px;
+  }
+
+  .action .slick-dots {
+    bottom: -50px;
+  }
+
+  .advantages__wrapper {
+    padding: 50px 0px;
+  }
+
+  .advantages__bottom {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px;
+  }
+
+  .advantages__box {
+    margin-bottom: 30px;
+  }
+
+  .doctors {
+    padding: 40px 0 50px;
+  }
+
+  .doctors__bottom {
+    margin: 40px 0px 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .doctors__box {
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+
+  .doctors__box:last-child {
+    margin: auto;
+  }
+
+  .doctors__box-text {
+    right: 0;
+  }
+
+  .video iframe {
+    width: 100%;
+  }
+
+  footer iframe {
+    width: 100%;
   }
 }
 
@@ -3124,20 +3011,10 @@ footer .contacts__box:last-child {
   }
 }
 
-.webp .menu__list-two::after{ background-image: url("../images/Header/Select.webp"); }
+.webp .menu__list-two::after{ background-image: url(/images/Header/Select.webp); }
 
-.webp .menu__launge::before{ background-image: url("../images/Header/Select.webp"); }
+.webp .menu__launge::before{ background-image: url(/images/Header/Select.webp); }
 
-.webp .advantages{ background-image: url("../images/Advantages/1.webp"); }
+.webp .advantages{ background-image: url(/images/Advantages/1.webp); }
 
-.webp .form__page{ background-image: url("../images/Form/Form.webp"); }
-#journey{ 
-fill:#87AD3B;
-}
-#journey:hover{ 
-fill:white;
-}
-path{
-fill:inherit;
-stroke:inherit;
-}
+.webp .form__page{ background-image: url(/images/Form/Form.webp); }

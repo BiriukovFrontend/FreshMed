@@ -3,29 +3,34 @@ $('.slider__wrapper').slick({
     autoplay: true,
     autoplaySpeed: 5000,
 });
-$('.action__slider-inner').slick({
+$('.action__slider').slick({
     dots: true,
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    responsive: [{
-            breakpoint: 320,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true,
-                autoplay: true,
-            }
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+         
+          }
         },
         {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true,
-                autoplay: true,
-            }
+          breakpoint: 740,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }
     ]
 });
@@ -33,23 +38,13 @@ $('.slick-next,.slick-prev').addClass('animate__fadeIn');
 
 
 
-function mouseDown() {
-
-   var obj = document.querySelector("object");
-var svg = obj.contentDocument.querySelector("svg");
-    svg.style.fill = "red";
-
-}
-function mouseOut() {
-
-  var obj = document.querySelector("object");
-var svg = obj.contentDocument.querySelector("svg");
-    svg.style.fill = "white";
-
-}
-
-document.body.addEventListener('mouseover', mouseDown);
-document.body.addEventListener('mouseout', mouseOut);
+$('.services__box, .price__box').hover(
+    function () {
+        $(this).find('object').contents().find('svg').addClass("journey");
+    },
+    function () {
+        $(this).find('object').contents().find('svg').removeClass("journey");
+    });
 
 function myFunction() {
     // Объявить переменные
@@ -189,7 +184,7 @@ $(document).ready(function(){
            
 /*если нет то скрываем кнопку*/
         } 
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 10) {
            
             $('.menu').css('position','fixed').css('top','0px');
 /*если нет то скрываем кнопку*/
@@ -206,7 +201,3 @@ $(document).ready(function(){
         return false;
     });
 });        
-
-new fullpage('#fullpage', {
-	autoScrolling:true
-});
