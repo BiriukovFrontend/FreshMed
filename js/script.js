@@ -1,6 +1,6 @@
 $('.slider__wrapper').slick({
     dots: true,
-    autoplay: true,
+    /* autoplay: true, */
     autoplaySpeed: 5000,
 });
 $('.action__slider').slick({
@@ -18,6 +18,13 @@ $('.action__slider').slick({
          
           }
         },
+        {
+            breakpoint: 880,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
         {
           breakpoint: 740,
           settings: {
@@ -94,8 +101,8 @@ jQuery(document).ready(function () {
                 success: function (data) {
                     form.html(data);
                     form.css('opacity', '1');
-                    //form.find('.status').html('форма отправлена успешно');
-                    //$('#myModal').modal('show') // для бутстрапа
+                    form.find('.status').html('форма отправлена успешно');
+                    $('#myModal').modal('show'); // для бутстрапа
                 },
                 error: function () {
                     form.find('.status').html('серверная ошибка');
@@ -128,6 +135,11 @@ setTimeout(function () {
 
     $('.menu__mobile-burger').click(function (event) {
         $('.menu__mobile-one, .menu__mobile-burger').toggleClass('active');
+     
+    });
+    $('.menu__mobile-burger').click(function (event) {
+        $('.menu__mobile-burgerText').toggleClass('active');
+      
     });
 
     $(".menu__list-two ul").hide();
