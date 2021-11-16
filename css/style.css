@@ -732,6 +732,12 @@ header {
   display: none;
 }
 
+.menu__list-two.active.menu__list-two::after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .slider {
   max-height: 696px;
 }
